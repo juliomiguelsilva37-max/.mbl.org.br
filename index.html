@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f3ee">
+<meta name="description" content="Portal independente de roleplay com propostas para a Bahia, compromissos constitucionais e acompanhamento de metas.">
+<meta property="og:title" content="MBL Bahia — Portal de Roleplay">
+<meta property="og:description" content="Propostas, compromissos institucionais e plano de ação para o cenário de roleplay na Bahia.">
+<meta property="og:type" content="website">
+<title>MBL — Movimento Brasil Livre</title>
+<link rel="icon" type="image/svg+xml" href="mbl-logo.svg">
+<style>
+:root{--ink:#141414;--paper:#f5f3ee;--white:#fff;--muted:#6a6965;--line:#d9d6cf;--orange:#ff6338;--yellow:#ffd23f;--green:#009b4d;--blue:#2376d2;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(var(--max),calc(100% - 44px));margin:auto}.topline{height:5px;background:linear-gradient(90deg,var(--green) 0 33.3%,var(--yellow) 33.3% 66.6%,var(--blue) 66.6%)}header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid #e4e1da}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand img{width:215px}.navlinks{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.navlinks a:hover{color:#e6502d}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;background:var(--ink);color:#fff;border-radius:4px;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--orange);transform:translateY(-2px)}.menu{display:none;border:0;background:transparent;font-size:27px}.hero{padding:42px 0 64px;background:#171717;color:white;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:50px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:900;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:3px;width:25px;background:var(--orange)}h1{font-size:clamp(42px,6.3vw,83px);line-height:.94;letter-spacing:-.065em;margin:20px 0 22px;font-weight:950;max-width:700px}h1 span{color:var(--orange)}.hero p{max-width:590px;font-size:17px;color:#d1d1d1}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn.orange{background:var(--orange);color:#111}.btn.ghost{background:transparent;border:1px solid #666}.hero-art{position:relative;min-height:410px;border-radius:5px;overflow:hidden;background:#282522}.hero-art img{position:absolute;width:100%;height:100%;object-fit:cover;opacity:.8}.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent 65%),linear-gradient(90deg,rgba(255,99,56,.24),transparent)}.art-label{position:absolute;z-index:1;left:25px;bottom:24px;font-size:12px;letter-spacing:.15em;font-weight:900;text-transform:uppercase}.art-label strong{display:block;font-size:clamp(26px,3vw,42px);letter-spacing:-.04em;line-height:1.03;margin-top:8px}.ticker{background:var(--orange);color:#111;overflow:hidden;white-space:nowrap;font-size:12px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;padding:13px 0}.ticker span{padding:0 25px}.section{padding:80px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.kicker{font-size:11px;font-weight:900;letter-spacing:.16em;color:#e6502d;text-transform:uppercase}.section h2{font-size:clamp(32px,4.3vw,53px);line-height:1;letter-spacing:-.055em;margin:9px 0 0}.section-head p{max-width:440px;color:var(--muted);margin:0}.initiative-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.initiative{min-height:300px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;border-radius:5px;color:white;overflow:hidden;position:relative;background:#252525}.initiative:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,99,56,.82),transparent 60%);opacity:.85}.initiative:nth-child(2):before{background:linear-gradient(135deg,rgba(0,155,77,.8),transparent 70%)}.initiative:nth-child(3):before{background:linear-gradient(135deg,rgba(35,118,210,.82),transparent 70%)}.initiative>*{position:relative}.initiative .number{font-size:12px;font-weight:900;letter-spacing:.15em;opacity:.8}.initiative h3{font-size:30px;letter-spacing:-.04em;margin:0 0 8px}.initiative p{color:#e4e4e4;margin:0 0 17px;max-width:340px}.text-link{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.text-link span{font-size:18px;margin-left:8px}.about{background:#e8e5de}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}.about-big{font-size:clamp(35px,5vw,64px);line-height:.98;letter-spacing:-.06em;font-weight:950}.about-copy p{font-size:16px;color:#4e4d49;margin-top:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.stat{border-top:3px solid var(--orange);padding-top:13px}.stat strong{display:block;font-size:27px;letter-spacing:-.04em}.stat small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.people-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.founders-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.founder-card{background:#fff;border:1px solid var(--line);border-radius:5px;overflow:hidden}.founder-art{height:245px;display:flex;align-items:end;padding:20px;background:linear-gradient(145deg,#171717,#373737 58%,#e6502d);color:#fff;position:relative;overflow:hidden}.founder-card:nth-child(2) .founder-art{background:linear-gradient(145deg,#172128,#304b55 58%,#e6b72e)}.founder-card:nth-child(3) .founder-art{background:linear-gradient(145deg,#202020,#414141 58%,#2376d2)}.founder-art:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(255,255,255,.35);border-radius:50%;right:-40px;top:-45px}.founder-art span{font-size:84px;line-height:.8;font-weight:950;letter-spacing:-.1em;position:relative;z-index:1}.founder-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block}.founder-art:after{pointer-events:none}.founder-art span{display:none}.founder-info{padding:20px}.founder-info h3{margin:0 0 7px;font-size:22px;letter-spacing:-.04em}.founder-info p{margin:0;color:var(--muted);font-size:14px}.person{background:#fff;border:1px solid var(--line);border-radius:5px;overflow:hidden}.person-art{height:220px;display:flex;align-items:end;padding:17px;background:linear-gradient(145deg,#2a2928,#49413a 55%,#f26845);color:#fff;position:relative;overflow:hidden}.person:nth-child(2) .person-art{background:linear-gradient(145deg,#121b20,#304b55 55%,#ff6338)}.person:nth-child(3) .person-art{background:linear-gradient(145deg,#242424,#414141 55%,#2376d2)}.person:nth-child(4) .person-art{background:linear-gradient(145deg,#25251e,#4e4b3b 55%,#009b4d)}.person-art:after{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(255,255,255,.3);border-radius:50%;right:-45px;top:-45px}.person-art span{font-size:70px;line-height:.8;font-weight:950;letter-spacing:-.1em;opacity:.95}.person-info{padding:18px}.person h3{font-size:19px;letter-spacing:-.03em;margin:0 0 6px}.person p{font-size:13px;color:var(--muted);margin:0}.news{background:#171717;color:white}.news .section-head p{color:#c6c6c6}.news-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:16px}.news-card{border-top:1px solid #4b4b4b;padding-top:16px}.news-card .tag{font-size:10px;letter-spacing:.15em;font-weight:900;color:var(--orange);text-transform:uppercase}.news-card h3{font-size:22px;line-height:1.1;letter-spacing:-.04em;margin:13px 0}.news-card p{font-size:13px;color:#bdbdbd}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.year{border-top:3px solid var(--ink);padding-top:14px}.year strong{font-size:34px;letter-spacing:-.06em}.year h3{margin:5px 0;font-size:17px}.year p{font-size:13px;color:var(--muted);margin:0}.join{background:var(--orange);padding:55px 0}.join-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.join h2{font-size:clamp(30px,4vw,48px);line-height:.98;letter-spacing:-.06em;margin:0;max-width:650px}.join p{max-width:400px;margin:12px 0 0}.join .btn{background:#111}.footer{background:#101010;color:#fff;padding:42px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:start;padding-bottom:28px;border-bottom:1px solid #3b3b3b}.footer-brand img{width:210px;filter:invert(1) grayscale(1) brightness(2)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#d2d2d2}.footer-note{font-size:11px;color:#9a9a9a;display:flex;justify-content:space-between;gap:20px;padding-top:20px}.disclaimer{max-width:700px}.proposals{background:#121a18;color:#f7f5ed;position:relative;overflow:hidden}.proposals:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}.proposals .container{position:relative}.proposals .section-head p{color:#c6d0ca}.game-hud{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 24px;padding:12px 15px;background:#202b27;border:1px solid #46534d;font:800 11px monospace;letter-spacing:.08em;text-transform:uppercase}.game-hud span{color:#9be7b0}.proposal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.proposal-card{background:#202925;border:1px solid #46534d;padding:22px;min-height:230px;position:relative;box-shadow:5px 5px 0 #090d0c}.proposal-card:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:#ff6338}.proposal-card:nth-child(3n+2):before{background:#ffd23f}.proposal-card:nth-child(3n):before{background:#49ce85}.proposal-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:17px}.proposal-icon{font-size:25px}.proposal-tag{font:900 10px monospace;letter-spacing:.08em;background:#33413a;padding:6px 8px;color:#a8f0bd}.proposal-card h3{font-size:21px;line-height:1.05;letter-spacing:-.035em;margin:0 0 11px}.proposal-card p{color:#c3cdc7;font-size:13px;margin:0}.proposal-card small{display:block;margin-top:15px;color:#ffb49f;font:800 10px monospace;text-transform:uppercase;letter-spacing:.08em}.proposal-note{margin-top:24px;padding:17px 19px;border:1px dashed #65746b;color:#c8d3cc;font-size:12px}.proposal-note strong{color:#ffd23f}.to-top{position:fixed;right:18px;bottom:18px;border:0;background:var(--orange);width:42px;height:42px;border-radius:50%;font-size:20px;font-weight:900;cursor:pointer;display:none;z-index:8}
+
+.candidate-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.candidate-panel{background:#fff;border:1px solid var(--line);border-top:5px solid var(--orange);padding:23px;border-radius:5px}.candidate-panel:nth-child(2){border-top-color:var(--green)}.candidate-panel:nth-child(3){border-top-color:var(--blue)}.candidate-panel h3{font-size:25px;line-height:1.05;margin:4px 0 10px;letter-spacing:-.04em}.candidate-panel .candidate-label{font:900 10px monospace;letter-spacing:.1em;color:#d94d2c;text-transform:uppercase}.candidate-panel p{font-size:13px;color:var(--muted)}.candidate-panel ul{padding-left:19px;font-size:13px}.candidate-panel li{margin:8px 0}.source-note{font-size:12px;color:var(--muted);margin-top:18px}.proposal-tools{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}.proposal-tools input,.proposal-tools select,.join-form input,.join-form select,.join-form textarea{font:inherit;padding:12px;border:1px solid #c9c6bf;border-radius:4px;background:#fff;min-width:0}.proposal-tools input{flex:1;min-width:220px}.catalog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.catalog-item{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:4px}.catalog-item b{font:900 11px monospace;color:#df5735;min-width:34px}.catalog-item span{font-size:13px}.catalog-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.catalog-count{font:900 12px monospace;background:#171717;color:#fff;padding:10px 12px;border-radius:4px}.join-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.join-form label{display:grid;gap:6px;font-size:12px;font-weight:800}.join-form .wide{grid-column:1/-1}.join-form .form-check{display:flex;align-items:flex-start;gap:9px;font-weight:500}.join-form button{border:0;cursor:pointer}.form-message{padding:13px;background:#e7f4e9;border:1px solid #9bcaa4;color:#174b27;display:none;margin-top:14px;font-size:13px}.membership{background:#e8e5de}.membership .section-head p{max-width:560px}.formal-note{margin-top:22px}
+@media(max-width:900px){.candidate-tabs{grid-template-columns:1fr}.catalog-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.join-form{grid-template-columns:1fr}.join-form .wide{grid-column:auto}.proposal-tools input{min-width:100%}}
+
+@media(max-width:900px){.navlinks{gap:13px}.navlinks a{font-size:10px}.nav-cta{display:none}.hero-grid{grid-template-columns:1fr .8fr;gap:25px}.hero-art{min-height:350px}.people-grid{grid-template-columns:repeat(2,1fr)}.founders-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.initiative-grid{grid-template-columns:1fr 1fr}.initiative:last-child{grid-column:1/-1}.timeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.container{width:min(100% - 30px,var(--max))}.nav{min-height:70px}.brand img{width:175px}.menu{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;padding:18px 22px 22px;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.navlinks.open{display:flex}.navlinks a{font-size:12px}.hero{padding:32px 0 40px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:260px}.hero p{font-size:15px}.section{padding:55px 0}.section-head{display:block}.section-head p{margin-top:15px}.initiative-grid,.news-grid{grid-template-columns:1fr}.proposal-grid{grid-template-columns:1fr}.initiative:last-child{grid-column:auto}.initiative{min-height:240px}.about-grid{grid-template-columns:1fr;gap:25px}.stats{gap:9px}.stat strong{font-size:22px}.people-grid{gap:10px}.founders-grid{grid-template-columns:1fr}.founder-art{height:190px}.founder-art span{font-size:68px}.founder-info{padding:16px}.person-art{height:155px}.person-art span{font-size:54px}.person-info{padding:13px}.person h3{font-size:16px}.person p{font-size:12px}.timeline{grid-template-columns:1fr 1fr}.join-row{display:block}.join .btn{margin-top:20px}.footer-top{display:block}.footer-links{margin-top:25px}.footer-note{display:block}.footer-note span{display:block;margin-top:12px}}
+
+/* Premium civic portal enhancements */
+:root{--focus:#1c6f4a}
+:focus-visible{outline:3px solid #2376d2;outline-offset:3px}
+.navlinks a{transition:color .18s ease}
+.hero{background:radial-gradient(circle at 82% 25%,#34302c 0,transparent 35%),#141414}
+.hero-art{box-shadow:12px 12px 0 rgba(255,99,56,.24);border:1px solid #555}
+.section{scroll-margin-top:95px}
+.proposal-card{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.proposal-card:hover{transform:translateY(-4px);border-color:#9be7b0;box-shadow:7px 8px 0 #090d0c}
+.constitutional{background:#f9f8f4}
+.principles-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.principle{padding:24px;background:#fff;border:1px solid var(--line);border-top:4px solid #202925;min-height:205px}
+.principle span{font:900 11px monospace;letter-spacing:.13em;color:#e6502d}
+.principle h3{font-size:21px;line-height:1.1;letter-spacing:-.035em;margin:18px 0 10px}
+.principle p{font-size:14px;color:#5e5d58;margin:0}
+.formal-note{padding:18px 20px;margin:25px 0 0;border-left:4px solid #e6502d;background:#ebe8e1;color:#44423e;font-size:13px}
+.action-plan{background:#e8e5de}
+.roadmap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.roadmap article{background:#fff;border:1px solid #d8d4cc;padding:22px;position:relative}
+.roadmap article:not(:last-child):after{content:'→';position:absolute;right:-13px;top:26px;z-index:1;background:#e8e5de;width:25px;height:25px;border-radius:50%;text-align:center;font-weight:900;line-height:25px}
+.phase{font:900 10px monospace;letter-spacing:.13em;color:#e6502d}
+.roadmap h3{font-size:24px;letter-spacing:-.04em;margin:12px 0 8px}
+.roadmap p,.roadmap li{font-size:13px;color:#5e5d58}
+.roadmap ul{padding-left:18px;margin-bottom:0}
+@media(max-width:900px){.principles-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.roadmap{grid-template-columns:repeat(2,minmax(0,1fr))}.roadmap article:nth-child(2):after{display:none}}
+@media(max-width:650px){.principles-grid,.roadmap{grid-template-columns:1fr}.roadmap article:after{display:none!important}.principle{min-height:0}.hero-art{box-shadow:6px 6px 0 rgba(255,99,56,.24)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="MBL — início"><img src="mbl-logo.svg" alt="MBL — Movimento Brasil Livre"></a>
+    <button class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="navlinks" aria-label="Navegação principal">
+      <a href="#movimento">O movimento</a><a href="#iniciativas">Iniciativas</a><a href="#revista-propostas">Propostas dos candidatos</a><a href="#clube-propostas">Banco de propostas</a><a href="#academia-admissao">Admissão</a><a href="#fundadores">Fundadores</a><a href="#porta-vozes">Porta-vozes</a>
+    </nav>
+    <a class="nav-cta" href="#participar">Conheça o projeto ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Movimento Brasil Livre</div>
+   <h1>Juntos pelo Brasil que <span>sonhamos.</span></h1>
+   <p>Um portal de apresentação política com navegação clara, propostas para a Bahia, compromissos institucionais e experiências visuais inspiradas no universo Roblox. Conteúdo de roleplay, independente e sem vínculo oficial com o MBL.</p>
+   <div class="hero-actions"><a class="btn orange" href="#iniciativas">Conheça as iniciativas ↗</a><a class="btn ghost" href="#movimento">Sobre o movimento</a></div>
+  </div>
+  <div class="hero-art">
+   <img src="https://framerusercontent.com/images/z3qpZ2QmgdGNizf3SkQhsOJyc8.png?height=1278&width=3612" alt="Imagem de evento e público em um encontro do movimento">
+   <div class="art-label">Ideias em movimento<strong>Um Brasil de<br>possibilidades.</strong></div>
+  </div>
+ </div>
+</section>
+<div class="ticker"><span>IDEIAS</span> ✳ <span>CULTURA</span> ✳ <span>EDUCAÇÃO</span> ✳ <span>PARTICIPAÇÃO</span> ✳ <span>BRASIL</span> ✳ <span>IDEIAS</span> ✳ <span>CULTURA</span> ✳ <span>EDUCAÇÃO</span></div>
+
+<section class="section" id="iniciativas">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">O que fazemos</div><h2>Iniciativas MBL</h2></div><p>Projetos que conectam formação intelectual, cultura, comunicação e participação pública.</p></div>
+  <div class="initiative-grid">
+   <article class="initiative"><div class="number">01 / CULTURA</div><div><h3>Revista Valete</h3><p>Conteúdos para explorar política, economia, história, filosofia e cultura.</p><a class="text-link" href="#revista-propostas">Propostas dos candidatos <span>↗</span></a></div></article>
+   <article class="initiative"><div class="number">02 / CONHECIMENTO</div><div><h3>Clube do Livro</h3><p>Leitura, ideias e conversas sobre livros, identidade e imaginário brasileiro.</p><a class="text-link" href="#clube-propostas">Banco de ideias <span>↗</span></a></div></article>
+   <article class="initiative"><div class="number">03 / FORMAÇÃO</div><div><h3>Academia MBL</h3><p>Formação e desenvolvimento para quem deseja atuar na vida pública.</p><a class="text-link" href="#academia-admissao">Formulário de admissão <span>↗</span></a></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section proposals" id="propostas-ba">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Modo Bahia • roleplay</div><h2>Missões para a Bahia</h2></div><p>Um painel de propostas estaduais apresentado em estilo de jogo Roblox: objetivos, melhorias e metas para a administração pública no cenário de roleplay.</p></div>
+  <div class="game-hud"><div>▶ MAPA: <span>BAHIA</span></div><div>MISSÕES DISPONÍVEIS: <span>18</span></div><div>STATUS: <span>PROPOSTAS EM DISCUSSÃO</span></div></div>
+  <div class="proposal-grid">
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🛡️</span><span class="proposal-tag">MISSÃO 01</span></div><h3>Segurança e combate ao crime</h3><p>Integrar melhor as forças de segurança, investir em inteligência e investigação, valorizar a formação policial e publicar indicadores de criminalidade para orientar ações.</p><small>Objetivo: segurança com responsabilidade</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🏫</span><span class="proposal-tag">MISSÃO 02</span></div><h3>Educação que abre portas</h3><p>Recuperar aprendizagens essenciais, ampliar ensino técnico e profissionalizante, melhorar a infraestrutura escolar e divulgar metas de aprendizagem por rede.</p><small>Objetivo: oportunidade e resultado</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🏥</span><span class="proposal-tag">MISSÃO 03</span></div><h3>Saúde sem filas invisíveis</h3><p>Organizar filas de consultas e exames com transparência, reforçar a atenção básica e publicar dados sobre tempo de espera e disponibilidade de serviços.</p><small>Objetivo: atendimento mais eficiente</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🧾</span><span class="proposal-tag">MISSÃO 04</span></div><h3>Governo transparente</h3><p>Disponibilizar contratos, gastos, licitações e indicadores em linguagem simples; fortalecer auditorias e canais seguros para denúncias de irregularidades.</p><small>Objetivo: dinheiro público sob fiscalização</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🏪</span><span class="proposal-tag">MISSÃO 05</span></div><h3>Empreender na Bahia</h3><p>Simplificar procedimentos estaduais, digitalizar licenças quando possível, reduzir burocracia desnecessária e facilitar a formalização de pequenos negócios.</p><small>Objetivo: menos barreiras, mais atividade</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🛣️</span><span class="proposal-tag">MISSÃO 06</span></div><h3>Estradas e mobilidade</h3><p>Priorizar manutenção viária por critérios públicos, monitorar obras e prazos e melhorar a conexão entre municípios, polos de produção e serviços essenciais.</p><small>Objetivo: conectar cidades e pessoas</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">💧</span><span class="proposal-tag">MISSÃO 07</span></div><h3>Água e saneamento</h3><p>Ampliar o acesso à água segura, ao esgotamento sanitário e à drenagem, com planejamento específico para regiões afetadas pela seca e por enchentes.</p><small>Objetivo: infraestrutura básica para todos</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🌴</span><span class="proposal-tag">MISSÃO 08</span></div><h3>Turismo e economia local</h3><p>Valorizar patrimônio cultural e destinos turísticos, apoiar qualificação profissional e melhorar informações e infraestrutura para visitantes e negócios locais.</p><small>Objetivo: renda e desenvolvimento regional</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">📱</span><span class="proposal-tag">MISSÃO 09</span></div><h3>Serviços públicos digitais</h3><p>Reunir serviços estaduais em plataformas acessíveis, permitir acompanhamento de solicitações e estabelecer prazos e indicadores de qualidade de atendimento.</p><small>Objetivo: resolver mais, esperar menos</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">⚖️</span><span class="proposal-tag">MISSÃO 10</span></div><h3>Legalidade e segurança jurídica</h3><p>Publicar atos administrativos de forma acessível, padronizar procedimentos e assegurar que decisões estaduais tenham fundamento legal, motivação e possibilidade de controle.</p><small>Objetivo: administração dentro da lei</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🧑‍⚖️</span><span class="proposal-tag">MISSÃO 11</span></div><h3>Instituições independentes</h3><p>Respeitar as competências constitucionais dos Poderes e órgãos autônomos, vedar interferências indevidas e fortalecer mecanismos de fiscalização e prestação de contas.</p><small>Objetivo: equilíbrio institucional</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🌾</span><span class="proposal-tag">MISSÃO 12</span></div><h3>Desenvolvimento rural</h3><p>Melhorar assistência técnica, acesso a mercados e infraestrutura rural, com critérios transparentes e atenção às particularidades dos territórios baianos.</p><small>Objetivo: oportunidades no campo</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">☀️</span><span class="proposal-tag">MISSÃO 13</span></div><h3>Energia e inovação</h3><p>Estimular investimentos regulares em energia renovável, inovação e conectividade, respeitando licenciamento, direitos das comunidades e regras ambientais.</p><small>Objetivo: energia, tecnologia e emprego</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🏘️</span><span class="proposal-tag">MISSÃO 14</span></div><h3>Habitação e regularização</h3><p>Cooperar com municípios em planejamento urbano, regularização fundiária conforme a lei e melhoria de bairros com infraestrutura básica.</p><small>Objetivo: cidades mais estruturadas</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🌳</span><span class="proposal-tag">MISSÃO 15</span></div><h3>Meio ambiente e resiliência</h3><p>Fortalecer prevenção de incêndios, proteção de recursos hídricos, fiscalização ambiental técnica e planos de resposta a secas, enchentes e eventos extremos.</p><small>Objetivo: proteger pessoas e patrimônio natural</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🚌</span><span class="proposal-tag">MISSÃO 16</span></div><h3>Mobilidade regional</h3><p>Planejar transporte intermunicipal com dados de demanda, acessibilidade e segurança, em diálogo com municípios e operadores competentes.</p><small>Objetivo: deslocamentos mais previsíveis</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">🧑‍💻</span><span class="proposal-tag">MISSÃO 17</span></div><h3>Qualificação e primeiro emprego</h3><p>Conectar formação técnica a setores com demanda real, divulgar oportunidades e criar parcerias transparentes com instituições de ensino e empregadores.</p><small>Objetivo: transformar formação em oportunidade</small></article>
+   <article class="proposal-card"><div class="proposal-top"><span class="proposal-icon">📊</span><span class="proposal-tag">MISSÃO 18</span></div><h3>Orçamento com metas públicas</h3><p>Apresentar prioridades orçamentárias, indicadores, custos estimados e relatórios periódicos para que a população acompanhe o que foi planejado e entregue.</p><small>Objetivo: promessas acompanhadas por resultados</small></article>
+  </div>
+  <div class="proposal-note"><strong>⚠ AVISO DO SERVIDOR:</strong> esta área é uma proposta de programa para o cenário fictício de Roblox/roleplay. Não representa um plano oficial publicado pelo MBL para a Bahia. As medidas precisariam de estudo técnico, orçamento, competência legal e debate público antes de qualquer implementação real.</div>
+ </div>
+</section>
+
+<section class="section" id="revista-propostas">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Revista Valete • Especial Bahia</div><h2>Propostas por candidato</h2></div><p>Uma área editorial que reúne ideias para o cenário de roleplay. Propostas autorais para a Bahia estão separadas de temas inspirados em projetos públicos de Kim Kataguiri.</p></div>
+  <div class="candidate-tabs">
+   <article class="candidate-panel"><div class="candidate-label">Caderno 01 / Renan Santos</div><h3>Serviços públicos, segurança e condições de vida</h3><p>Propostas elaboradas para o cenário baiano de roleplay; não constituem um programa oficial verificado.</p><ul>
+    <li>Reajustar em 61% a remuneração por unidade de lixo recolhida pelos trabalhadores da limpeza urbana, passando de R$ 50 para R$ 80,50 por unidade, sujeito a estudo de custos, contratação e regras trabalhistas.</li>
+    <li>Ampliar concursos e processos seletivos legalmente cabíveis para as forças de segurança, com planejamento de efetivo, formação e previsão orçamentária.</li>
+    <li>Publicar indicadores de coleta de resíduos, rotas atendidas e frequência de limpeza por município.</li>
+    <li>Fortalecer a alimentação escolar com cardápios nutricionalmente adequados e compras transparentes.</li>
+    <li>Ampliar recuperação de aprendizagem, tutoria e acesso a material didático.</li>
+    <li>Expandir cursos técnicos em parceria com escolas, institutos e empregadores locais.</li>
+    <li>Publicar filas e prazos de consultas e exames, protegendo dados pessoais.</li>
+    <li>Mapear pontos críticos de iluminação, transporte e infraestrutura urbana com participação municipal.</li>
+    <li>Criar painel de metas trimestrais para limpeza, saúde, educação e segurança, com auditoria dos dados.</li>
+    <li>Ampliar programas de capacitação e equipamentos de proteção para trabalhadores de serviços essenciais.</li>
+   </ul></article>
+   <article class="candidate-panel"><div class="candidate-label">Caderno 02 / Kim Kataguiri</div><h3>Fiscalização legislativa, transparência e serviços ao cidadão</h3><p>As linhas abaixo contextualizam temas de sua atuação parlamentar para debate estadual; não significam que cada medida tenha sido anunciada especificamente para a Bahia.</p><ul>
+    <li>Desenvolver um painel público de acompanhamento de projetos, emendas, audiências e votações da Assembleia Legislativa da Bahia.</li>
+    <li>Facilitar o envio de sugestões e reclamações por cidadãos, com protocolo e acompanhamento público.</li>
+    <li>Publicar dados de execução orçamentária e contratos em formato aberto e compreensível.</li>
+    <li>Reforçar a fiscalização de compras públicas e a prevenção de desperdícios.</li>
+    <li>Adaptar ao contexto estadual a transparência sobre resíduos e descarte irregular, tema de projeto apresentado por Kim Kataguiri no Congresso.</li>
+    <li>Debater medidas de proteção ao consumidor contra alimentos e bebidas adulterados, respeitadas as competências de cada órgão.</li>
+    <li>Promover políticas de apoio a gestantes em vulnerabilidade, articuladas com a rede de saúde e assistência social.</li>
+    <li>Ampliar o acompanhamento familiar em atendimentos de crianças com necessidades específicas, conforme normas clínicas e direitos aplicáveis.</li>
+    <li>Fortalecer prestação de contas sobre resultados legislativos e avaliação do impacto das leis estaduais.</li>
+    <li>Estimular simplificação de serviços e procedimentos digitais, com alternativas presenciais para quem precisar.</li>
+   </ul><p class="source-note">Referências de temas parlamentares: <a href="https://kimkataguiri.com.br/cpt-projetos-de-lei/" target="_blank" rel="noreferrer"><u>Projetos de lei de Kim Kataguiri</u></a> e <a href="https://www.camara.leg.br/deputados/204536" target="_blank" rel="noreferrer"><u>perfil oficial na Câmara</u></a>. Situação e conteúdo dos projetos devem ser conferidos nas fontes originais.</p></article>
+   <article class="candidate-panel"><div class="candidate-label">Caderno 03 / Alencar Costa</div><h3>Reforma institucional e gestão pública</h3><p>Propostas para debate constitucional e administrativo no cenário de roleplay, condicionadas à legalidade e à participação popular.</p><ul>
+    <li>Instalar, se juridicamente cabível, processo público e plural de revisão da Constituição Estadual, respeitando os limites da Constituição Federal.</li>
+    <li>Publicar estudos jurídicos, relatórios de impacto e propostas de emenda antes de qualquer votação.</li>
+    <li>Realizar audiências públicas regionalizadas para ouvir municípios, universidades, entidades civis e comunidades.</li>
+    <li>Reforçar transparência de gastos, contratos, convênios e emendas parlamentares.</li>
+    <li>Adotar avaliação de impacto regulatório para projetos de maior alcance.</li>
+    <li>Revisar procedimentos administrativos para reduzir etapas redundantes sem enfraquecer controles.</li>
+    <li>Estabelecer metas públicas de qualidade em saúde, educação, infraestrutura e atendimento digital.</li>
+    <li>Garantir autonomia e respeito às competências dos Poderes e órgãos constitucionalmente independentes.</li>
+    <li>Instituir relatórios periódicos de execução e explicações públicas para metas não alcançadas.</li>
+    <li>Promover cooperação com municípios, respeitando autonomia federativa e atribuições legais.</li>
+   </ul></article>
+  </div>
+  <p class="formal-note"><strong>Nota editorial:</strong> este conteúdo é parte de um projeto independente de roleplay. Somente os temas explicitamente vinculados a fontes públicas são apresentados como inspirados na atuação parlamentar; os demais são propostas fictícias elaboradas para o cenário baiano.</p>
+ </div>
+</section>
+
+<section class="section" id="clube-propostas" style="background:#f1efe9">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Clube do Livro • Caderno de ideias</div><h2>Banco geral de 210 propostas</h2></div><p>Um catálogo para leitura, debate e revisão. O MBL é apresentado aqui como movimento cívico e político, não como partido; a parceria com o partido Missão é uma relação distinta dentro do cenário de roleplay.</p></div>
+  <div class="catalog-meta"><span class="catalog-count">210 IDEIAS PARA DEBATE</span><span style="font-size:12px;color:var(--muted)">Filtre por tema ou pesquise uma palavra.</span></div>
+  <div class="proposal-tools"><input id="proposalSearch" type="search" placeholder="Pesquisar propostas (ex.: saúde, escola, orçamento)" aria-label="Pesquisar propostas"><select id="proposalCategory" aria-label="Filtrar propostas por tema"><option value="">Todos os temas</option><option value="Integridade e transparência">Integridade e transparência</option><option value="Gestão e simplificação">Gestão e simplificação</option><option value="Educação básica">Educação básica</option><option value="Ensino técnico e superior">Ensino técnico e superior</option><option value="Alimentação e segurança alimentar">Alimentação e segurança alimentar</option><option value="Saúde e prevenção">Saúde e prevenção</option><option value="Segurança pública e prevenção">Segurança pública e prevenção</option><option value="Justiça e cidadania">Justiça e cidadania</option><option value="Trabalho e renda">Trabalho e renda</option><option value="Empreendedorismo e economia">Empreendedorismo e economia</option><option value="Agricultura e desenvolvimento rural">Agricultura e desenvolvimento rural</option><option value="Infraestrutura e mobilidade">Infraestrutura e mobilidade</option><option value="Saneamento e recursos hídricos">Saneamento e recursos hídricos</option><option value="Meio ambiente e clima">Meio ambiente e clima</option><option value="Turismo e cultura">Turismo e cultura</option><option value="Tecnologia e conectividade">Tecnologia e conectividade</option><option value="Famílias e infância">Famílias e infância</option><option value="Juventude e esporte">Juventude e esporte</option><option value="Habitação e desenvolvimento urbano">Habitação e desenvolvimento urbano</option><option value="Proteção do consumidor">Proteção do consumidor</option><option value="Participação e controle social">Participação e controle social</option></select></div>
+  <div class="catalog-grid" id="catalogGrid"><article class="catalog-item" data-category="Integridade e transparência"><b>#001</b><span><strong>Integridade e transparência:</strong> Publicar contratos estaduais em formato aberto.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#002</b><span><strong>Integridade e transparência:</strong> Divulgar cronogramas e aditivos de obras públicas.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#003</b><span><strong>Integridade e transparência:</strong> Criar painel de execução orçamentária por secretaria.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#004</b><span><strong>Integridade e transparência:</strong> Padronizar relatórios anuais de desempenho institucional.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#005</b><span><strong>Integridade e transparência:</strong> Disponibilizar dados de licitações em linguagem simples.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#006</b><span><strong>Integridade e transparência:</strong> Fortalecer canais de denúncia com proteção de dados.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#007</b><span><strong>Integridade e transparência:</strong> Publicar agendas oficiais de autoridades quando cabível.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#008</b><span><strong>Integridade e transparência:</strong> Adotar indicadores de risco em compras públicas.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#009</b><span><strong>Integridade e transparência:</strong> Realizar auditorias por amostragem com critérios públicos.</span></article>
+<article class="catalog-item" data-category="Integridade e transparência"><b>#010</b><span><strong>Integridade e transparência:</strong> Apresentar respostas formais a recomendações de controle.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#011</b><span><strong>Gestão e simplificação:</strong> Revisar formulários estaduais para eliminar redundâncias.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#012</b><span><strong>Gestão e simplificação:</strong> Criar catálogo único de serviços públicos estaduais.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#013</b><span><strong>Gestão e simplificação:</strong> Definir prazos de resposta para solicitações administrativas.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#014</b><span><strong>Gestão e simplificação:</strong> Permitir acompanhamento digital de requerimentos.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#015</b><span><strong>Gestão e simplificação:</strong> Oferecer atendimento presencial alternativo aos serviços digitais.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#016</b><span><strong>Gestão e simplificação:</strong> Padronizar linguagem dos documentos públicos.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#017</b><span><strong>Gestão e simplificação:</strong> Capacitar servidores em atendimento ao cidadão.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#018</b><span><strong>Gestão e simplificação:</strong> Avaliar serviços com pesquisas públicas acessíveis.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#019</b><span><strong>Gestão e simplificação:</strong> Reunir informações de serviços em portal acessível.</span></article>
+<article class="catalog-item" data-category="Gestão e simplificação"><b>#020</b><span><strong>Gestão e simplificação:</strong> Publicar metas anuais por órgão e unidade.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#021</b><span><strong>Educação básica:</strong> Mapear defasagens de aprendizagem por etapa escolar.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#022</b><span><strong>Educação básica:</strong> Oferecer tutoria para estudantes com dificuldades.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#023</b><span><strong>Educação básica:</strong> Ampliar formação continuada de professores.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#024</b><span><strong>Educação básica:</strong> Melhorar bibliotecas e espaços de leitura.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#025</b><span><strong>Educação básica:</strong> Monitorar manutenção de escolas com cronogramas públicos.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#026</b><span><strong>Educação básica:</strong> Fortalecer ensino de matemática e leitura.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#027</b><span><strong>Educação básica:</strong> Ampliar acesso a recursos digitais educacionais.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#028</b><span><strong>Educação básica:</strong> Publicar dados de frequência escolar agregados.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#029</b><span><strong>Educação básica:</strong> Estimular projetos de ciência e tecnologia nas escolas.</span></article>
+<article class="catalog-item" data-category="Educação básica"><b>#030</b><span><strong>Educação básica:</strong> Ampliar participação de famílias em conselhos escolares.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#031</b><span><strong>Ensino técnico e superior:</strong> Expandir cursos técnicos conforme demanda regional.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#032</b><span><strong>Ensino técnico e superior:</strong> Firmar parcerias transparentes com institutos de ensino.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#033</b><span><strong>Ensino técnico e superior:</strong> Divulgar estágios e aprendizagem profissional.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#034</b><span><strong>Ensino técnico e superior:</strong> Oferecer orientação de carreira nas escolas.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#035</b><span><strong>Ensino técnico e superior:</strong> Apoiar laboratórios de inovação educacional.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#036</b><span><strong>Ensino técnico e superior:</strong> Estimular pesquisa aplicada a problemas locais.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#037</b><span><strong>Ensino técnico e superior:</strong> Mapear necessidades de qualificação dos territórios.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#038</b><span><strong>Ensino técnico e superior:</strong> Promover feiras de profissões e cursos técnicos.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#039</b><span><strong>Ensino técnico e superior:</strong> Acompanhar a inserção profissional de egressos.</span></article>
+<article class="catalog-item" data-category="Ensino técnico e superior"><b>#040</b><span><strong>Ensino técnico e superior:</strong> Ampliar acessibilidade em instituições de formação.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#041</b><span><strong>Alimentação e segurança alimentar:</strong> Fiscalizar a qualidade da alimentação escolar.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#042</b><span><strong>Alimentação e segurança alimentar:</strong> Publicar cardápios escolares e informações nutricionais.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#043</b><span><strong>Alimentação e segurança alimentar:</strong> Aprimorar compras públicas de alimentos com transparência.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#044</b><span><strong>Alimentação e segurança alimentar:</strong> Apoiar bancos de alimentos em cooperação municipal.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#045</b><span><strong>Alimentação e segurança alimentar:</strong> Reduzir desperdício em cozinhas públicas.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#046</b><span><strong>Alimentação e segurança alimentar:</strong> Mapear insegurança alimentar com dados agregados.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#047</b><span><strong>Alimentação e segurança alimentar:</strong> Promover educação alimentar nas escolas.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#048</b><span><strong>Alimentação e segurança alimentar:</strong> Fortalecer inspeção sanitária dentro das competências estaduais.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#049</b><span><strong>Alimentação e segurança alimentar:</strong> Apoiar agricultura familiar em compras públicas legais.</span></article>
+<article class="catalog-item" data-category="Alimentação e segurança alimentar"><b>#050</b><span><strong>Alimentação e segurança alimentar:</strong> Monitorar estoques e distribuição de alimentos emergenciais.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#051</b><span><strong>Saúde e prevenção:</strong> Publicar tempos médios de espera por especialidade.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#052</b><span><strong>Saúde e prevenção:</strong> Melhorar regulação de consultas e exames.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#053</b><span><strong>Saúde e prevenção:</strong> Fortalecer atenção primária em cooperação com municípios.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#054</b><span><strong>Saúde e prevenção:</strong> Ampliar campanhas de vacinação baseadas em evidências.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#055</b><span><strong>Saúde e prevenção:</strong> Monitorar disponibilidade de medicamentos essenciais.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#056</b><span><strong>Saúde e prevenção:</strong> Melhorar transparência em contratos de saúde.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#057</b><span><strong>Saúde e prevenção:</strong> Apoiar saúde materno-infantil.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#058</b><span><strong>Saúde e prevenção:</strong> Expandir prevenção de doenças crônicas.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#059</b><span><strong>Saúde e prevenção:</strong> Qualificar acolhimento em unidades de saúde.</span></article>
+<article class="catalog-item" data-category="Saúde e prevenção"><b>#060</b><span><strong>Saúde e prevenção:</strong> Divulgar indicadores de qualidade sem expor pacientes.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#061</b><span><strong>Segurança pública e prevenção:</strong> Planejar efetivo com base em dados e necessidades regionais.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#062</b><span><strong>Segurança pública e prevenção:</strong> Ampliar formação contínua dos profissionais de segurança.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#063</b><span><strong>Segurança pública e prevenção:</strong> Publicar estatísticas criminais com metodologia clara.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#064</b><span><strong>Segurança pública e prevenção:</strong> Fortalecer investigação e perícia dentro da lei.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#065</b><span><strong>Segurança pública e prevenção:</strong> Aprimorar protocolos de atendimento às vítimas.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#066</b><span><strong>Segurança pública e prevenção:</strong> Investir em prevenção da violência juvenil.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#067</b><span><strong>Segurança pública e prevenção:</strong> Melhorar iluminação em áreas públicas em parceria municipal.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#068</b><span><strong>Segurança pública e prevenção:</strong> Avaliar programas de policiamento por indicadores.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#069</b><span><strong>Segurança pública e prevenção:</strong> Reforçar proteção a vítimas e testemunhas conforme a lei.</span></article>
+<article class="catalog-item" data-category="Segurança pública e prevenção"><b>#070</b><span><strong>Segurança pública e prevenção:</strong> Publicar relatórios de uso de recursos e equipamentos.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#071</b><span><strong>Justiça e cidadania:</strong> Ampliar informação pública sobre direitos e serviços.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#072</b><span><strong>Justiça e cidadania:</strong> Simplificar encaminhamentos para assistência jurídica.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#073</b><span><strong>Justiça e cidadania:</strong> Promover educação cívica em espaços comunitários.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#074</b><span><strong>Justiça e cidadania:</strong> Aprimorar acessibilidade de serviços estaduais.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#075</b><span><strong>Justiça e cidadania:</strong> Divulgar canais de atendimento a vítimas.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#076</b><span><strong>Justiça e cidadania:</strong> Fortalecer mediação administrativa quando legalmente cabível.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#077</b><span><strong>Justiça e cidadania:</strong> Publicar fluxos de atendimento e documentos necessários.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#078</b><span><strong>Justiça e cidadania:</strong> Aprimorar comunicação pública em linguagem simples.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#079</b><span><strong>Justiça e cidadania:</strong> Promover respeito ao devido processo legal.</span></article>
+<article class="catalog-item" data-category="Justiça e cidadania"><b>#080</b><span><strong>Justiça e cidadania:</strong> Cooperar com órgãos competentes sem interferir em sua autonomia.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#081</b><span><strong>Trabalho e renda:</strong> Expandir qualificação para primeiro emprego.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#082</b><span><strong>Trabalho e renda:</strong> Divulgar vagas e cursos em plataformas públicas.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#083</b><span><strong>Trabalho e renda:</strong> Apoiar intermediação de mão de obra regional.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#084</b><span><strong>Trabalho e renda:</strong> Mapear competências profissionais demandadas.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#085</b><span><strong>Trabalho e renda:</strong> Estimular aprendizagem profissional conforme legislação.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#086</b><span><strong>Trabalho e renda:</strong> Apoiar capacitação para trabalhadores em transição.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#087</b><span><strong>Trabalho e renda:</strong> Promover segurança e saúde no trabalho.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#088</b><span><strong>Trabalho e renda:</strong> Publicar indicadores estaduais de emprego.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#089</b><span><strong>Trabalho e renda:</strong> Facilitar acesso a orientação para formalização.</span></article>
+<article class="catalog-item" data-category="Trabalho e renda"><b>#090</b><span><strong>Trabalho e renda:</strong> Aproximar escolas técnicas de empregadores locais.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#091</b><span><strong>Empreendedorismo e economia:</strong> Simplificar procedimentos estaduais de abertura de negócios.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#092</b><span><strong>Empreendedorismo e economia:</strong> Digitalizar licenças estaduais quando juridicamente possível.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#093</b><span><strong>Empreendedorismo e economia:</strong> Oferecer guias de obrigações para pequenos empreendedores.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#094</b><span><strong>Empreendedorismo e economia:</strong> Publicar calendário tributário estadual em linguagem clara.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#095</b><span><strong>Empreendedorismo e economia:</strong> Promover capacitação de gestão para microempresas.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#096</b><span><strong>Empreendedorismo e economia:</strong> Estimular compras públicas competitivas e transparentes.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#097</b><span><strong>Empreendedorismo e economia:</strong> Mapear barreiras burocráticas com consulta pública.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#098</b><span><strong>Empreendedorismo e economia:</strong> Divulgar programas de crédito de instituições habilitadas.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#099</b><span><strong>Empreendedorismo e economia:</strong> Apoiar feiras de negócios locais.</span></article>
+<article class="catalog-item" data-category="Empreendedorismo e economia"><b>#100</b><span><strong>Empreendedorismo e economia:</strong> Avaliar custos administrativos de novas regras.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#101</b><span><strong>Agricultura e desenvolvimento rural:</strong> Melhorar assistência técnica rural em cooperação institucional.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#102</b><span><strong>Agricultura e desenvolvimento rural:</strong> Mapear estradas vicinais prioritárias com critérios públicos.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#103</b><span><strong>Agricultura e desenvolvimento rural:</strong> Apoiar acesso a mercados para pequenos produtores.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#104</b><span><strong>Agricultura e desenvolvimento rural:</strong> Promover capacitação em gestão rural.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#105</b><span><strong>Agricultura e desenvolvimento rural:</strong> Ampliar informações meteorológicas para agricultores.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#106</b><span><strong>Agricultura e desenvolvimento rural:</strong> Estimular uso eficiente da água na produção.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#107</b><span><strong>Agricultura e desenvolvimento rural:</strong> Apoiar regularização documental dentro da lei.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#108</b><span><strong>Agricultura e desenvolvimento rural:</strong> Facilitar acesso a serviços públicos em áreas rurais.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#109</b><span><strong>Agricultura e desenvolvimento rural:</strong> Promover feiras de agricultura familiar.</span></article>
+<article class="catalog-item" data-category="Agricultura e desenvolvimento rural"><b>#110</b><span><strong>Agricultura e desenvolvimento rural:</strong> Divulgar dados de programas rurais e seus resultados.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#111</b><span><strong>Infraestrutura e mobilidade:</strong> Publicar cronogramas de manutenção de rodovias estaduais.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#112</b><span><strong>Infraestrutura e mobilidade:</strong> Priorizar obras por risco, fluxo e impacto social.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#113</b><span><strong>Infraestrutura e mobilidade:</strong> Monitorar contratos e qualidade de pavimentação.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#114</b><span><strong>Infraestrutura e mobilidade:</strong> Melhorar acessibilidade em terminais públicos estaduais.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#115</b><span><strong>Infraestrutura e mobilidade:</strong> Integrar planejamento de transporte intermunicipal.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#116</b><span><strong>Infraestrutura e mobilidade:</strong> Mapear pontos de risco em estradas.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#117</b><span><strong>Infraestrutura e mobilidade:</strong> Divulgar interrupções e desvios com antecedência.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#118</b><span><strong>Infraestrutura e mobilidade:</strong> Avaliar segurança viária com indicadores.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#119</b><span><strong>Infraestrutura e mobilidade:</strong> Planejar infraestrutura junto a municípios.</span></article>
+<article class="catalog-item" data-category="Infraestrutura e mobilidade"><b>#120</b><span><strong>Infraestrutura e mobilidade:</strong> Publicar relatórios de conclusão e custos de obras.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#121</b><span><strong>Saneamento e recursos hídricos:</strong> Mapear áreas com déficit de abastecimento.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#122</b><span><strong>Saneamento e recursos hídricos:</strong> Publicar indicadores de perdas de água.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#123</b><span><strong>Saneamento e recursos hídricos:</strong> Apoiar planos de segurança hídrica.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#124</b><span><strong>Saneamento e recursos hídricos:</strong> Monitorar qualidade da água conforme normas.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#125</b><span><strong>Saneamento e recursos hídricos:</strong> Priorizar saneamento em áreas vulneráveis.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#126</b><span><strong>Saneamento e recursos hídricos:</strong> Fortalecer prevenção de enchentes com municípios.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#127</b><span><strong>Saneamento e recursos hídricos:</strong> Planejar respostas a períodos de seca.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#128</b><span><strong>Saneamento e recursos hídricos:</strong> Acompanhar metas de esgotamento sanitário.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#129</b><span><strong>Saneamento e recursos hídricos:</strong> Promover educação para uso responsável da água.</span></article>
+<article class="catalog-item" data-category="Saneamento e recursos hídricos"><b>#130</b><span><strong>Saneamento e recursos hídricos:</strong> Divulgar dados de obras de saneamento.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#131</b><span><strong>Meio ambiente e clima:</strong> Fortalecer prevenção e resposta a incêndios florestais.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#132</b><span><strong>Meio ambiente e clima:</strong> Publicar dados de licenciamento conforme regras de acesso.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#133</b><span><strong>Meio ambiente e clima:</strong> Recuperar áreas degradadas com avaliação técnica.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#134</b><span><strong>Meio ambiente e clima:</strong> Apoiar conservação de nascentes.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#135</b><span><strong>Meio ambiente e clima:</strong> Monitorar qualidade do ar e da água.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#136</b><span><strong>Meio ambiente e clima:</strong> Planejar adaptação a eventos climáticos extremos.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#137</b><span><strong>Meio ambiente e clima:</strong> Promover educação ambiental em escolas.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#138</b><span><strong>Meio ambiente e clima:</strong> Melhorar destinação de resíduos sólidos.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#139</b><span><strong>Meio ambiente e clima:</strong> Incentivar reciclagem e economia circular.</span></article>
+<article class="catalog-item" data-category="Meio ambiente e clima"><b>#140</b><span><strong>Meio ambiente e clima:</strong> Publicar metas ambientais mensuráveis.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#141</b><span><strong>Turismo e cultura:</strong> Mapear equipamentos culturais e turísticos estaduais.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#142</b><span><strong>Turismo e cultura:</strong> Promover calendário integrado de eventos culturais.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#143</b><span><strong>Turismo e cultura:</strong> Apoiar capacitação de trabalhadores do turismo.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#144</b><span><strong>Turismo e cultura:</strong> Melhorar sinalização turística em parceria local.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#145</b><span><strong>Turismo e cultura:</strong> Valorizar patrimônio histórico com conservação técnica.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#146</b><span><strong>Turismo e cultura:</strong> Divulgar rotas de turismo sustentável.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#147</b><span><strong>Turismo e cultura:</strong> Apoiar economia criativa regional.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#148</b><span><strong>Turismo e cultura:</strong> Publicar indicadores de visitação e impacto local.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#149</b><span><strong>Turismo e cultura:</strong> Ampliar acessibilidade em espaços culturais estaduais.</span></article>
+<article class="catalog-item" data-category="Turismo e cultura"><b>#150</b><span><strong>Turismo e cultura:</strong> Estimular parcerias transparentes com agentes culturais.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#151</b><span><strong>Tecnologia e conectividade:</strong> Expandir conectividade em serviços públicos estaduais.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#152</b><span><strong>Tecnologia e conectividade:</strong> Adotar padrões de acessibilidade digital.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#153</b><span><strong>Tecnologia e conectividade:</strong> Publicar dados em formatos reutilizáveis.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#154</b><span><strong>Tecnologia e conectividade:</strong> Oferecer capacitação digital a usuários de serviços.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#155</b><span><strong>Tecnologia e conectividade:</strong> Aprimorar segurança da informação institucional.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#156</b><span><strong>Tecnologia e conectividade:</strong> Reduzir duplicidade de cadastros dentro da lei.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#157</b><span><strong>Tecnologia e conectividade:</strong> Criar testes de usabilidade para portais públicos.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#158</b><span><strong>Tecnologia e conectividade:</strong> Garantir alternativas para pessoas sem internet.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#159</b><span><strong>Tecnologia e conectividade:</strong> Avaliar ferramentas digitais antes da contratação.</span></article>
+<article class="catalog-item" data-category="Tecnologia e conectividade"><b>#160</b><span><strong>Tecnologia e conectividade:</strong> Publicar políticas de privacidade em linguagem clara.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#161</b><span><strong>Famílias e infância:</strong> Fortalecer redes de proteção à infância.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#162</b><span><strong>Famílias e infância:</strong> Aprimorar encaminhamento de casos de violência.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#163</b><span><strong>Famílias e infância:</strong> Promover orientação a famílias sobre serviços públicos.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#164</b><span><strong>Famílias e infância:</strong> Apoiar inclusão escolar de crianças com deficiência.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#165</b><span><strong>Famílias e infância:</strong> Melhorar acessibilidade de serviços de assistência.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#166</b><span><strong>Famílias e infância:</strong> Ampliar prevenção de acidentes na infância.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#167</b><span><strong>Famílias e infância:</strong> Promover convivência familiar e comunitária.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#168</b><span><strong>Famílias e infância:</strong> Divulgar canais de denúncia e proteção.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#169</b><span><strong>Famílias e infância:</strong> Acompanhar indicadores de atendimento infantil.</span></article>
+<article class="catalog-item" data-category="Famílias e infância"><b>#170</b><span><strong>Famílias e infância:</strong> Articular políticas públicas com os municípios.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#171</b><span><strong>Juventude e esporte:</strong> Ampliar acesso a atividades esportivas comunitárias.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#172</b><span><strong>Juventude e esporte:</strong> Recuperar espaços públicos de lazer com municípios.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#173</b><span><strong>Juventude e esporte:</strong> Apoiar formação esportiva inclusiva.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#174</b><span><strong>Juventude e esporte:</strong> Promover cultura digital e programação para jovens.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#175</b><span><strong>Juventude e esporte:</strong> Criar fóruns de escuta da juventude.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#176</b><span><strong>Juventude e esporte:</strong> Divulgar oportunidades de estágio e aprendizagem.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#177</b><span><strong>Juventude e esporte:</strong> Incentivar voluntariado seguro e supervisionado.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#178</b><span><strong>Juventude e esporte:</strong> Apoiar eventos culturais juvenis com regras transparentes.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#179</b><span><strong>Juventude e esporte:</strong> Monitorar acesso a equipamentos de esporte.</span></article>
+<article class="catalog-item" data-category="Juventude e esporte"><b>#180</b><span><strong>Juventude e esporte:</strong> Fortalecer prevenção à evasão escolar.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#181</b><span><strong>Habitação e desenvolvimento urbano:</strong> Cooperar com municípios em planos de desenvolvimento urbano.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#182</b><span><strong>Habitação e desenvolvimento urbano:</strong> Mapear áreas de risco para planejamento preventivo.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#183</b><span><strong>Habitação e desenvolvimento urbano:</strong> Apoiar regularização fundiária conforme legislação.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#184</b><span><strong>Habitação e desenvolvimento urbano:</strong> Monitorar obras de urbanização com dados públicos.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#185</b><span><strong>Habitação e desenvolvimento urbano:</strong> Promover acessibilidade em prédios públicos estaduais.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#186</b><span><strong>Habitação e desenvolvimento urbano:</strong> Planejar drenagem urbana com municípios.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#187</b><span><strong>Habitação e desenvolvimento urbano:</strong> Melhorar informações sobre programas habitacionais.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#188</b><span><strong>Habitação e desenvolvimento urbano:</strong> Apoiar revitalização de espaços públicos.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#189</b><span><strong>Habitação e desenvolvimento urbano:</strong> Publicar critérios de priorização de investimentos.</span></article>
+<article class="catalog-item" data-category="Habitação e desenvolvimento urbano"><b>#190</b><span><strong>Habitação e desenvolvimento urbano:</strong> Estimular participação comunitária em projetos urbanos.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#191</b><span><strong>Proteção do consumidor:</strong> Divulgar canais oficiais de reclamação e orientação.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#192</b><span><strong>Proteção do consumidor:</strong> Promover educação para consumo consciente.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#193</b><span><strong>Proteção do consumidor:</strong> Apoiar fiscalização de produtos dentro da competência estadual.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#194</b><span><strong>Proteção do consumidor:</strong> Publicar alertas sobre riscos de produtos quando oficiais.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#195</b><span><strong>Proteção do consumidor:</strong> Facilitar acesso a informações de preços e direitos.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#196</b><span><strong>Proteção do consumidor:</strong> Fortalecer orientação sobre contratos e serviços.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#197</b><span><strong>Proteção do consumidor:</strong> Monitorar reclamações agregadas para identificar padrões.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#198</b><span><strong>Proteção do consumidor:</strong> Promover ações educativas sobre golpes digitais.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#199</b><span><strong>Proteção do consumidor:</strong> Estimular solução administrativa de conflitos quando cabível.</span></article>
+<article class="catalog-item" data-category="Proteção do consumidor"><b>#200</b><span><strong>Proteção do consumidor:</strong> Divulgar resultados de ações fiscalizatórias com metodologia.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#201</b><span><strong>Participação e controle social:</strong> Realizar consultas públicas sobre planos estaduais.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#202</b><span><strong>Participação e controle social:</strong> Publicar respostas a contribuições recebidas.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#203</b><span><strong>Participação e controle social:</strong> Promover audiências regionais com atas acessíveis.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#204</b><span><strong>Participação e controle social:</strong> Criar painel de metas e execução de políticas.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#205</b><span><strong>Participação e controle social:</strong> Oferecer materiais de educação cívica apartidária.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#206</b><span><strong>Participação e controle social:</strong> Estimular participação de universidades e organizações civis.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#207</b><span><strong>Participação e controle social:</strong> Publicar calendário de consultas e audiências.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#208</b><span><strong>Participação e controle social:</strong> Explicar competências estaduais e municipais.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#209</b><span><strong>Participação e controle social:</strong> Divulgar relatórios de avaliação de políticas.</span></article>
+<article class="catalog-item" data-category="Participação e controle social"><b>#210</b><span><strong>Participação e controle social:</strong> Revisar propostas com base em evidências e contribuições.</span></article></div>
+  <p id="catalogEmpty" style="display:none;padding:20px;background:#fff">Nenhuma proposta corresponde à pesquisa.</p>
+  <p class="formal-note"><strong>Como interpretar:</strong> as 210 entradas são ideias de trabalho redigidas para este portal de roleplay, não uma transcrição de 210 propostas oficiais do MBL. Podem servir de base para estudo, discussão pública e elaboração conjunta com o partido Missão, sem alterar a natureza do MBL como movimento.</p>
+ </div>
+</section>
+
+<section class="section about" id="movimento">
+ <div class="container about-grid">
+  <div><div class="kicker">Quem somos</div><div class="about-big">Um movimento de ideias, pessoas e projetos.</div></div>
+  <div class="about-copy"><p>O Movimento Brasil Livre surgiu em 2014 e passou a atuar em diferentes frentes de participação pública, comunicação, cultura e formação. Ao longo de sua trajetória, o movimento ampliou suas iniciativas e sua presença em debates nacionais.</p><p>Este portal reúne uma apresentação visual dessas áreas e referências para conhecer melhor cada projeto. Para informações atualizadas, consulte também os canais oficiais do movimento.</p>
+   <div class="stats"><div class="stat"><strong>2014</strong><small>Ano de fundação</small></div><div class="stat"><strong>Brasil</strong><small>Atuação nacional</small></div><div class="stat"><strong>Várias</strong><small>Frentes de atuação</small></div></div>
+  </div>
+ </div>
+</section>
+
+
+<section class="section" id="fundadores" style="background:#f1efe9">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Origem e liderança</div><h2>Fundadores</h2></div><p>O projeto apresenta uma fundação conjunta, formada por Renan Santos, Kim Kataguiri e Alencar Costa.</p></div>
+  <div class="founders-grid">
+   <article class="founder-card"><div class="founder-art"><img src="renan-santos.jpg" alt="Avatar Roblox de Renan Santos"></div><div class="founder-info"><h3>Renan Santos</h3><p>Fundador — nome associado à origem e à trajetória pública do movimento.</p></div></article>
+   <article class="founder-card"><div class="founder-art"><img src="kim-kataguiri.jpg" alt="Avatar Roblox de Kim Kataguiri"></div><div class="founder-info"><h3>Kim Kataguiri</h3><p>Fundador, apresentado neste projeto como integrante da fundação colegiada ao lado de Renan Santos e Alencar Costa.</p></div></article>
+   <article class="founder-card"><div class="founder-art"><img src="alencar-costa.jpg" alt="Avatar Roblox de Alencar Costa"></div><div class="founder-info"><h3>Alencar Costa</h3><p>Fundador em igualdade de posição com Renan Santos e Kim Kataguiri, conforme a estrutura deste projeto de roleplay.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="porta-vozes">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Pessoas e trajetórias</div><h2>Porta-vozes</h2></div><p>Perfis institucionais resumidos. A seção foi reduzida aos nomes solicitados para este portal de roleplay.</p></div>
+  <div class="people-grid" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px">
+   <article class="person"><div class="person-art" style="height:245px;padding:0"><img src="renan-santos.jpg" alt="Avatar Roblox de Renan Santos" style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></div><div class="person-info"><h3>Renan Santos</h3><p>Fundador e liderança pública associada à organização e à comunicação do MBL. Neste projeto, integra a fundação colegiada em igualdade de posição com Kim Kataguiri e Alencar Costa.</p></div></article>
+   <article class="person"><div class="person-art" style="height:245px;padding:0"><img src="kim-kataguiri.jpg" alt="Avatar Roblox de Kim Kataguiri" style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></div><div class="person-info"><h3>Kim Kataguiri</h3><p>Fundador do MBL e deputado federal. Sua atuação parlamentar pode ser consultada nos registros oficiais da Câmara dos Deputados. Neste projeto, integra a fundação colegiada em igualdade de posição com Renan Santos e Alencar Costa.</p><p style="margin-top:10px"><a class="text-link" href="https://www.camara.leg.br/deputados/204536" target="_blank" rel="noreferrer">Consultar perfil parlamentar ↗</a></p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="section news" id="noticias">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Atualizações</div><h2>Últimas notícias</h2></div><p>Consulte os canais oficiais para acompanhar notícias, propostas, eventos e publicações recentes.</p></div>
+  <div class="news-grid">
+   <article class="news-card"><div class="tag">Movimento</div><h3>O que é o MBL e como o movimento se organiza?</h3><p>Conheça a apresentação institucional, a trajetória e as diferentes frentes de atuação.</p><a class="text-link" href="https://mbl.org.br/mbl">Ler no site oficial <span>↗</span></a></article>
+   <article class="news-card"><div class="tag">Eventos</div><h3>Encontros e atividades</h3><p>Veja a agenda de eventos divulgada nos canais oficiais do movimento.</p><a class="text-link" href="https://mbl.org.br/eventos">Ver eventos <span>↗</span></a></article>
+   <article class="news-card"><div class="tag">Conteúdo</div><h3>Projetos, cultura e formação</h3><p>Explore os projetos editoriais, educacionais e culturais associados ao MBL.</p><a class="text-link" href="https://mbl.org.br/links">Explorar iniciativas <span>↗</span></a></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="historia">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Linha do tempo</div><h2>Uma trajetória em construção</h2></div><p>Alguns marcos da história pública do movimento, resumidos para esta página.</p></div>
+  <div class="timeline">
+   <article class="year"><strong>2014</strong><h3>O nascimento</h3><p>O MBL é criado e começa a organizar ações e manifestações públicas.</p></article>
+   <article class="year"><strong>2016</strong><h3>Mobilização nacional</h3><p>O movimento ganha visibilidade durante as manifestações pelo impeachment de Dilma Rousseff.</p></article>
+   <article class="year"><strong>2018</strong><h3>Representação eleitoral</h3><p>Integrantes do movimento conquistam mandatos eletivos.</p></article>
+   <article class="year"><strong>2023+</strong><h3>Novas iniciativas</h3><p>Expansão de projetos de cultura, publicação, formação e conteúdo digital.</p></article>
+  </div>
+  <p style="margin-top:25px"><a class="text-link" href="https://mbl.org.br/mbl" target="_blank" rel="noreferrer">Conheça a história completa <span>↗</span></a></p>
+ </div>
+</section>
+
+
+<section class="section constitutional" id="constitucional">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Compromissos institucionais</div><h2>Propostas com limites claros.</h2></div><p>Em uma democracia constitucional, objetivos públicos precisam respeitar competências legais, direitos fundamentais, transparência e controle institucional.</p></div>
+  <div class="principles-grid">
+   <article class="principle"><span>01</span><h3>Constituição acima de vontades pessoais</h3><p>Atos do governo devem observar a Constituição Federal, a Constituição Estadual e as leis aplicáveis.</p></article>
+   <article class="principle"><span>02</span><h3>Separação e harmonia entre Poderes</h3><p>Executivo, Legislativo e Judiciário exercem atribuições próprias, com controles recíprocos e sem usurpação de competências.</p></article>
+   <article class="principle"><span>03</span><h3>Instituições autônomas</h3><p>Ministério Público, tribunais de contas e demais instituições devem atuar conforme suas atribuições e garantias legais.</p></article>
+   <article class="principle"><span>04</span><h3>Segurança pública responsável</h3><p>Políticas de segurança devem combinar prevenção, investigação, responsabilização legal e respeito aos direitos fundamentais.</p></article>
+   <article class="principle"><span>05</span><h3>Transparência com proteção de dados</h3><p>Informações públicas devem ser acessíveis, respeitando sigilos legais, privacidade e proteção de dados pessoais.</p></article>
+   <article class="principle"><span>06</span><h3>Decisão baseada em evidências</h3><p>Metas devem ter indicadores, custos, prazos e avaliação pública; resultados não devem ser inventados ou prometidos sem fundamento.</p></article>
+  </div>
+  <p class="formal-note"><strong>Nota de responsabilidade:</strong> este é um projeto independente de roleplay. As propostas são ideias para discussão e não constituem orientação jurídica, promessa de execução nem programa oficial do MBL. A implementação real dependeria de estudos técnicos, disponibilidade orçamentária, legislação e debate democrático.</p>
+ </div>
+</section>
+<section class="section action-plan" id="plano">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Execução e prestação de contas</div><h2>Do discurso à entrega.</h2></div><p>Um modelo simples de acompanhamento para o cenário de roleplay: cada proposta precisa de responsável, prazo, indicador e relatório público.</p></div>
+  <div class="roadmap">
+   <article><div class="phase">FASE 01</div><h3>Diagnóstico</h3><p>Mapear dados disponíveis, ouvir municípios e identificar problemas prioritários.</p><ul><li>Diagnóstico publicado</li><li>Problemas e competências definidos</li><li>Riscos identificados</li></ul></article>
+   <article><div class="phase">FASE 02</div><h3>Planejamento</h3><p>Estimar custos, definir metas mensuráveis e avaliar alternativas legalmente possíveis.</p><ul><li>Orçamento estimado</li><li>Metas e prazos definidos</li><li>Consulta pública quando cabível</li></ul></article>
+   <article><div class="phase">FASE 03</div><h3>Implementação</h3><p>Executar por etapas, publicar contratos e acompanhar cronogramas e entregas.</p><ul><li>Responsáveis identificados</li><li>Marcos de execução</li><li>Dados de andamento</li></ul></article>
+   <article><div class="phase">FASE 04</div><h3>Prestação de contas</h3><p>Comparar resultados com as metas, explicar desvios e corrigir o que não funcionou.</p><ul><li>Relatório periódico</li><li>Indicadores verificáveis</li><li>Correções documentadas</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section class="join" id="participar">
+ <div class="container join-row"><div><h2>Conheça as ideias.<br>Explore os projetos.</h2><p>Encontre informações e canais de participação diretamente nas páginas oficiais.</p></div><a class="btn" href="https://mbl.org.br/" target="_blank" rel="noreferrer">Visitar o site oficial ↗</a></div>
+</section>
+</main>
+
+<section class="section membership" id="academia-admissao">
+ <div class="container">
+  <div class="section-head"><div><div class="kicker">Academia MBL • Roleplay</div><h2>Formulário de admissão</h2></div><p>Registre seu interesse em participar das atividades simuladas deste projeto. Este formulário é demonstrativo: não envia nem armazena dados e não representa filiação real ao MBL.</p></div>
+  <form class="join-form" id="admissionForm">
+   <label>Nome de exibição no roleplay<input name="displayName" required maxlength="80" placeholder="Como deseja ser identificado"></label>
+   <label>Nome de usuário na plataforma<input name="username" required maxlength="60" placeholder="Usuário (sem senha)"></label>
+   <label>Estado ou região no cenário<select name="region" required><option value="">Selecione</option><option>Bahia</option><option>Outro estado brasileiro</option><option>Atuação nacional no roleplay</option></select></label>
+   <label>Área de interesse<select name="interest" required><option value="">Selecione</option><option>Formação política e constitucional</option><option>Comunicação e produção de conteúdo</option><option>Pesquisa e elaboração de propostas</option><option>Organização de eventos</option><option>Transparência e acompanhamento de políticas</option></select></label>
+   <label class="wide">Por que deseja participar?<textarea name="motivation" rows="4" maxlength="800" placeholder="Escreva uma breve apresentação para o cenário de roleplay"></textarea></label>
+   <label class="wide form-check"><input type="checkbox" required> Confirmo que compreendo que este é um formulário de roleplay, que não sou filiado por preenchê-lo e que não devo inserir senhas, documentos ou dados sensíveis.</label>
+   <div class="wide"><button class="btn" type="submit">Enviar inscrição demonstrativa</button><div class="form-message" id="formMessage" role="status">Inscrição demonstrativa validada localmente. Nenhum dado foi enviado ou armazenado. Para uma filiação real, consulte apenas os canais oficiais do movimento.</div></div>
+  </form>
+  <p class="source-note">Este formulário não realiza filiação oficial. Para informações institucionais, visite <a href="https://mbl.org.br/" target="_blank" rel="noreferrer"><u>o site oficial do MBL</u></a>.</p>
+ </div>
+</section>
+
+<footer class="footer">
+ <div class="container">
+  <div class="footer-top"><a class="footer-brand" href="#inicio"><img src="mbl-logo.svg" alt="MBL — Movimento Brasil Livre"></a><div class="footer-links"><a href="#movimento">O movimento</a><a href="#iniciativas">Iniciativas</a><a href="#propostas-ba">Propostas BA</a><a href="#revista-propostas">Candidatos</a><a href="#clube-propostas">210 propostas</a><a href="#academia-admissao">Admissão</a><a href="#fundadores">Fundadores</a><a href="#porta-vozes">Porta-vozes</a><a href="https://mbl.org.br/" target="_blank" rel="noreferrer">Site oficial ↗</a></div></div>
+  <div class="footer-note"><div class="disclaimer">Projeto independente de roleplay/demonstração, sem vínculo oficial com o Movimento Brasil Livre. A marca e os nomes mencionados pertencem aos respectivos titulares. Para informações oficiais, consulte mbl.org.br.</div><span>© 2026 · Portal demonstrativo MBL</span></div>
+ </div>
+</footer>
+<button class="to-top" aria-label="Voltar ao topo">↑</button>
+<script>
+const menuButton=document.querySelector('.menu');
+const nav=document.querySelector('.navlinks');
+menuButton.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(opened));menuButton.textContent=opened?'×':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
+
+const searchInput=document.getElementById('proposalSearch');
+const categorySelect=document.getElementById('proposalCategory');
+const catalogItems=[...document.querySelectorAll('.catalog-item')];
+function filterCatalog(){const q=(searchInput?.value||'').trim().toLocaleLowerCase('pt-BR');const cat=categorySelect?.value||'';let shown=0;catalogItems.forEach(item=>{const matchText=item.textContent.toLocaleLowerCase('pt-BR').includes(q);const matchCat=!cat||item.dataset.category===cat;item.style.display=matchText&&matchCat?'flex':'none';if(matchText&&matchCat)shown++;});const empty=document.getElementById('catalogEmpty');if(empty)empty.style.display=shown?'none':'block';const count=document.querySelector('.catalog-count');if(count)count.textContent=shown+' DE '+catalogItems.length+' IDEIAS';}
+searchInput?.addEventListener('input',filterCatalog);categorySelect?.addEventListener('change',filterCatalog);
+document.getElementById('admissionForm')?.addEventListener('submit',event=>{event.preventDefault();document.getElementById('formMessage').style.display='block';});
+
+const topButton=document.querySelector('.to-top');
+window.addEventListener('scroll',()=>{topButton.style.display=window.scrollY>500?'block':'none';});
+topButton.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
